@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "endelurgy:end_adamantite_ore",
+    "endelurgy:voidslate_adamantite_ore"
+  ],
+  "step": "underground_ores"
+}

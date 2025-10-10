@@ -1,0 +1,38 @@
+{
+  "parent": "endelurgy:end/obtain_end_ore",
+  "criteria": {
+    "luxite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:luxite",
+              "endelurgy:noxrock_luxite_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.obtain_luxite.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:noxrock_luxite_ore"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.obtain_luxite.title"
+    }
+  },
+  "requirements": [
+    [
+      "luxite"
+    ]
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:husbandry/obtain_netherite_hoe",
+  "criteria": {
+    "enderite_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:enderite_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.husbandry.obtain_enderite_hoe.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "endelurgy:enderite_hoe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.husbandry.obtain_enderite_hoe.title"
+    }
+  },
+  "requirements": [
+    [
+      "enderite_hoe"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

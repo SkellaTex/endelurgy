@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "endelurgy:end_lapis_ore",
+    "endelurgy:voidslate_lapis_ore"
+  ],
+  "step": "underground_ores"
+}

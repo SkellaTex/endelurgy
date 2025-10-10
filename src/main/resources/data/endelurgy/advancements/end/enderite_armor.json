@@ -1,0 +1,56 @@
+{
+  "parent": "endelurgy:end/obtain_enderite",
+  "criteria": {
+    "enderite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:enderite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:enderite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:enderite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:enderite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.enderite_armor.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:enderite_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.enderite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "enderite_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

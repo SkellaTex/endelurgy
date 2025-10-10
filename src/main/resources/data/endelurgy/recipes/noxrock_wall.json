@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:noxrock"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "count": 6,
+    "item": "endelurgy:noxrock_wall"
+  },
+  "show_notification": true
+}

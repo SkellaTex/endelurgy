@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:end/kill_dragon",
+  "criteria": {
+    "end_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:raw_adamantite",
+              "endelurgy:end_adamantite_ore",
+              "endelurgy:voidslate_adamantite_ore",
+              "endelurgy:luxite",
+              "endelurgy:noxrock_luxite_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.obtain_end_ore.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:raw_adamantite"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.obtain_end_ore.title"
+    }
+  },
+  "requirements": [
+    [
+      "end_ore"
+    ]
+  ]
+}

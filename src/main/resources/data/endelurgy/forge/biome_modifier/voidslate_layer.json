@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "endelurgy:voidslate_patch",
+    "endelurgy:voidslate_patch_2",
+    "endelurgy:voidslate_patch_3"
+  ],
+  "step": "raw_generation"
+}

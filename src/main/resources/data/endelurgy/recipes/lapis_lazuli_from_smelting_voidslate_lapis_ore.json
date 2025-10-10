@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "endelurgy:voidslate_lapis_ore"
+  },
+  "result": "minecraft:lapis_lazuli"
+}

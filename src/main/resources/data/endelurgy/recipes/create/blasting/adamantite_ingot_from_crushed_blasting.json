@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "endelurgy:crushed_raw_adamantite"
+  },
+  "result": "endelurgy:adamantite_ingot"
+}

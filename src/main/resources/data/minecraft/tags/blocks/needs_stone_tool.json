@@ -1,0 +1,19 @@
+{
+  "values": [
+    "endelurgy:end_lapis_ore",
+    "endelurgy:voidslate_lapis_ore",
+    "endelurgy:voidslate",
+    "endelurgy:voidslate_stairs",
+    "endelurgy:voidslate_slab",
+    "endelurgy:voidslate_wall",
+    "endelurgy:polished_voidslate",
+    "endelurgy:polished_voidslate_stairs",
+    "endelurgy:polished_voidslate_slab",
+    "endelurgy:polished_voidslate_wall",
+    "endelurgy:chiseled_voidslate",
+    "endelurgy:voidslate_bricks",
+    "endelurgy:voidslate_brick_stairs",
+    "endelurgy:voidslate_brick_slab",
+    "endelurgy:voidslate_brick_wall"
+  ]
+}

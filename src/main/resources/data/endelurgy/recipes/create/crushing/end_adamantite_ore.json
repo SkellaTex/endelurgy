@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "endelurgy:end_adamantite_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "endelurgy:crushed_raw_adamantite"
+    },
+    {
+      "chance": 0.75,
+      "item": "endelurgy:crushed_raw_adamantite"
+    },
+    {
+      "count": 2,
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "minecraft:end_stone"
+    }
+  ]
+}

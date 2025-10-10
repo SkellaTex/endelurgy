@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endelurgy:block/polished_noxrock_slab"
+    },
+    "type=double": {
+      "model": "endelurgy:block/polished_noxrock"
+    },
+    "type=top": {
+      "model": "endelurgy:block/polished_noxrock_slab_top"
+    }
+  }
+}

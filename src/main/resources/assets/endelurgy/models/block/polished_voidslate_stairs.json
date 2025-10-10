@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "endelurgy:block/polished_voidslate",
+    "side": "endelurgy:block/polished_voidslate",
+    "top": "endelurgy:block/polished_voidslate"
+  }
+}

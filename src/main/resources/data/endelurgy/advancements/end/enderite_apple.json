@@ -1,0 +1,40 @@
+{
+  "parent": "endelurgy:end/obtain_enderite",
+  "criteria": {
+    "enderite_apple": {
+      "conditions": {
+        "item": {
+          "items": [
+            "endelurgy:enderite_apple"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.enderite_apple.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "endelurgy:enderite_apple"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.enderite_apple.title"
+    }
+  },
+  "requirements": [
+    [
+      "enderite_apple"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  },
+  "sends_telemetry_event": true
+}
+

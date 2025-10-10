@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:raw_purpur_block"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "count": 6,
+    "item": "endelurgy:raw_purpur_wall"
+  },
+  "show_notification": true
+}

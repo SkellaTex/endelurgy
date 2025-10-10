@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endelurgy:luxite"
+    },
+    {
+      "item": "endelurgy:luxite"
+    },
+    {
+      "item": "endelurgy:luxite"
+    },
+    {
+      "item": "endelurgy:luxite"
+    },
+    {
+      "item": "endelurgy:adamantite_ingot"
+    },
+    {
+      "item": "endelurgy:adamantite_ingot"
+    },
+    {
+      "item": "endelurgy:adamantite_ingot"
+    },
+    {
+      "item": "endelurgy:adamantite_ingot"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+  "result": {
+    "item": "endelurgy:enderite_ingot"
+  }
+}

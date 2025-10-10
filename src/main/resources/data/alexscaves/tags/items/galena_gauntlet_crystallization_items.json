@@ -1,0 +1,20 @@
+{
+  "__comment": "all items that the crystallization enchantment for the galena guantlet can use.",
+  "values": [
+    "endelurgy:noxrock_luxite_ore",
+    "endelurgy:luxite",
+    "endelurgy:luxite_block",
+    "endelurgy:enderite_ingot",
+    "endelurgy:enderite_block",
+    "endelurgy:enderite_sword",
+    "endelurgy:enderite_axe",
+    "endelurgy:enderite_pickaxe",
+    "endelurgy:enderite_shovel",
+    "endelurgy:enderite_hoe",
+    "endelurgy:enderite_helmet",
+    "endelurgy:enderite_chestplate",
+    "endelurgy:enderite_leggings",
+    "endelurgy:enderite_boots",
+    "endelurgy:enderite_apple"
+  ]
+}

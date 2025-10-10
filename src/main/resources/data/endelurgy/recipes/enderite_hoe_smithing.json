@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "endelurgy:enderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "result": {
+    "item": "endelurgy:enderite_hoe"
+  },
+  "template": {
+    "item": "endelurgy:enderite_upgrade_smithing_template"
+  }
+}

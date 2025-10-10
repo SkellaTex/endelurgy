@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "endelurgy:noxrock_bricks"
+  },
+  "result": "endelurgy:noxrock_brick_slab"
+}

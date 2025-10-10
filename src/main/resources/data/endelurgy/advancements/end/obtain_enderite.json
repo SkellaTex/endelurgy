@@ -1,0 +1,37 @@
+{
+  "parent": "endelurgy:end/obtain_luxite",
+  "criteria": {
+    "enderite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:enderite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.obtain_enderite.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:enderite_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.obtain_enderite.title"
+    }
+  },
+  "requirements": [
+    [
+      "enderite"
+    ]
+  ]
+}

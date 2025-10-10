@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "endelurgy:raw_adamantite_block"
+    },
+    "result": "endelurgy:adamantite_block",
+    "experience": 9,
+    "cookingtime": 900,
+    "conditions": [
+        {
+            "modid": "quark",
+            "type": "forge:mod_loaded"
+        },
+        {
+            "type": "quark:flag",
+            "flag": "smelt_ore_blocks"
+        }
+    ]
+}

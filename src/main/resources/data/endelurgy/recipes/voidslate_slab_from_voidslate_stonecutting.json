@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "endelurgy:voidslate"
+  },
+  "result": "endelurgy:voidslate_slab"
+}

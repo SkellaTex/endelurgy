@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "endelurgy:noxrock_luxite_ore",
+  "step": "underground_ores"
+}

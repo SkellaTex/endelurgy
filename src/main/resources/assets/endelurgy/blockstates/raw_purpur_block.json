@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "endelurgy:block/raw_purpur_block"
+      },
+      {
+        "model": "endelurgy:block/raw_purpur_block",
+        "y": 90
+      },
+      {
+        "model": "endelurgy:block/raw_purpur_block",
+        "y": 180
+      },
+      {
+        "model": "endelurgy:block/raw_purpur_block",
+        "y": 270
+      }
+    ]
+  }
+}

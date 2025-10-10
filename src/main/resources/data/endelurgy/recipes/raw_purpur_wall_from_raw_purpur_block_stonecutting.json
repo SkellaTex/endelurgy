@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "endelurgy:raw_purpur_block"
+  },
+  "result": "endelurgy:raw_purpur_wall"
+}

@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All Rights Reserved"
+
+[[mods]]
+modId="endelurgy"
+version="0.1.0"
+displayName="Endelurgy"
+logoFile="endelurgy.png"
+authors="SkellaTex"
+description='''Adds new ores, resources, and improves upon the End'''
+
+[[dependencies.endelurgy]]
+modId="forge"
+mandatory=true
+versionRange="*"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.endelurgy]]
+modId="minecraft"
+mandatory=true
+versionRange="1.20.1"
+ordering="NONE"
+side="BOTH"

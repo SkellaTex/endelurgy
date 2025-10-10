@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "endelurgy:raw_adamantite"
+  },
+  "result": "endelurgy:adamantite_ingot"
+}

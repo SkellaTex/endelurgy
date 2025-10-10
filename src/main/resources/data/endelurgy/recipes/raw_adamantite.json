@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "endelurgy:raw_adamantite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "endelurgy:raw_adamantite"
+  }
+}

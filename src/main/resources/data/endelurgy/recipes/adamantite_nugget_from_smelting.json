@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "endelurgy:adamantite_pickaxe"
+    },
+    {
+      "item": "endelurgy:adamantite_shovel"
+    },
+    {
+      "item": "endelurgy:adamantite_axe"
+    },
+    {
+      "item": "endelurgy:adamantite_hoe"
+    },
+    {
+      "item": "endelurgy:adamantite_sword"
+    },
+    {
+      "item": "endelurgy:adamantite_helmet"
+    },
+    {
+      "item": "endelurgy:adamantite_chestplate"
+    },
+    {
+      "item": "endelurgy:adamantite_leggings"
+    },
+    {
+      "item": "endelurgy:adamantite_boots"
+    }
+  ],
+  "result": "endelurgy:adamantite_nugget"
+}

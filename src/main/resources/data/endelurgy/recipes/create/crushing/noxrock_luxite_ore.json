@@ -1,0 +1,28 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "endelurgy:noxrock_luxite_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "endelurgy:luxite"
+    },
+    {
+      "chance": 0.25,
+      "item": "endelurgy:luxite"
+    },
+    {
+      "count": 3,
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "endelurgy:noxrock"
+    }
+  ]
+}

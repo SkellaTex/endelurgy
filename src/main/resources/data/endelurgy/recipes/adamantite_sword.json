@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "N": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "endelurgy:adamantite_ingot"
+    }
+  },
+  "pattern": [
+    "E",
+    "E",
+    "N"
+  ],
+  "result": {
+    "item": "endelurgy:adamantite_sword"
+  },
+  "show_notification": true
+}

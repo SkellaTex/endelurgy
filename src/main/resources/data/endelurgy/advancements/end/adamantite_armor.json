@@ -1,0 +1,53 @@
+{
+  "parent": "endelurgy:end/obtain_end_ore",
+  "criteria": {
+    "adamantite_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:adamantite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:adamantite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:adamantite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "endelurgy:adamantite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.adamantite_armor.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:adamantite_helmet",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.adamantite_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "adamantite_armor"
+    ]
+  ]
+}

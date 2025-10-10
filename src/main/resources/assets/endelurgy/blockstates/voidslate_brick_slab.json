@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endelurgy:block/voidslate_brick_slab"
+    },
+    "type=double": {
+      "model": "endelurgy:block/voidslate_bricks"
+    },
+    "type=top": {
+      "model": "endelurgy:block/voidslate_brick_slab_top"
+    }
+  }
+}

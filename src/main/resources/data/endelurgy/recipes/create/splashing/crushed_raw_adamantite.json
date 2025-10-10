@@ -1,0 +1,18 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "endelurgy:crushed_raw_adamantite"
+    }
+  ],
+  "results": [
+    {
+      "count": 9,
+      "item": "endelurgy:adamantite_nugget"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:gunpowder"
+    }
+  ]
+}
