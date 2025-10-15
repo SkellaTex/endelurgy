@@ -140,7 +140,7 @@
   "item.minecraft.tipped_arrow.effect.restoration": "Arrow of Restoration",
   "item.minecraft.tipped_arrow.effect.long_restoration": "Arrow of Restoration",
   "item.minecraft.tipped_arrow.effect.strong_restoration": "Arrow of Restoration",
-  "effect.endelurgy.restoration.description": "Repairs all items in inventory at random intervals; higher levels repair faster.",
+  "effect.endelurgy.restoration.description": "Repairs all equipped items at random intervals; higher levels repair faster.",
 
   "effect.endelurgy.corrosion": "Corrosion",
   "item.minecraft.potion.effect.corrosion": "Potion of Corrosion",
@@ -155,7 +155,7 @@
   "item.minecraft.tipped_arrow.effect.corrosion": "Arrow of Corrosion",
   "item.minecraft.tipped_arrow.effect.long_corrosion": "Arrow of Corrosion",
   "item.minecraft.tipped_arrow.effect.strong_corrosion": "Arrow of Corrosion",
-  "effect.endelurgy.corrosion.description": "Damages all items in inventory at random intervals; higher levels damage faster.",
+  "effect.endelurgy.corrosion.description": "Damages all equipped items at random intervals; higher levels damage faster.",
 
   "item.endelurgy.crushed_raw_adamantite": "Crushed Raw Adamantite"
 }

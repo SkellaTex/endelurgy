@@ -1,14 +1,12 @@
 {
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "modid": "create",
-        "type": "forge:mod_loaded"
-      }
+      "modid": "create",
+      "type": "forge:mod_loaded"
     }
   ],
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
   "ingredients": [
     {
       "item": "endelurgy:adamantite_ingot"
@@ -38,7 +36,9 @@
       "item": "minecraft:ender_eye"
     }
   ],
-  "result": {
-    "item": "endelurgy:enderite_ingot"
-  }
+  "results": [
+    {
+      "item": "endelurgy:enderite_ingot"
+    }
+  ]
 }
