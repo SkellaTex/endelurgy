@@ -1,0 +1,9 @@
+{
+  "asset_name": "adamantite",
+  "description": {
+    "color": "#64092B",
+    "translate": "trim_material.endelurgy.adamantite"
+  },
+  "ingredient": "endelurgy:adamantite_ingot",
+  "item_model_index": -1.0
+}

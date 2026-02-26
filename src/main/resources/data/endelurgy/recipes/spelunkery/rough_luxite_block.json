@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:rough_luxite"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "item": "endelurgy:rough_luxite_block"
+  },
+  "show_notification": true
+}

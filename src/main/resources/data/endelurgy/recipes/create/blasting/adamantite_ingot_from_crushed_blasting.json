@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "type": "minecraft:blasting",
   "cookingtime": 100,
   "experience": 0.1,

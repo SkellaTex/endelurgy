@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:raw_adamantite_nugget"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "item": "endelurgy:raw_adamantite"
+  },
+  "show_notification": true
+}

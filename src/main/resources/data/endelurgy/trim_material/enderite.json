@@ -1,0 +1,9 @@
+{
+  "asset_name": "enderite",
+  "description": {
+    "color": "#016E5E",
+    "translate": "trim_material.endelurgy.enderite"
+  },
+  "ingredient": "endelurgy:enderite_ingot",
+  "item_model_index": -1.0
+}

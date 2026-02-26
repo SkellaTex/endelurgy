@@ -157,5 +157,14 @@
   "item.minecraft.tipped_arrow.effect.strong_corrosion": "Arrow of Corrosion",
   "effect.endelurgy.corrosion.description": "Damages all equipped items at random intervals; higher levels damage faster.",
 
-  "item.endelurgy.crushed_raw_adamantite": "Crushed Raw Adamantite"
+  "item.endelurgy.crushed_raw_adamantite": "Crushed Raw Adamantite",
+  "item.endelurgy.raw_adamantite_nugget": "Raw Adamantite Nugget",
+  "item.endelurgy.rough_luxite": "Rough Luxite",
+  "item.endelurgy.luxite_shard": "Luxite Shard",
+  "item.endelurgy.rough_luxite_shard": "Rough Luxite Shard",
+  "block.endelurgy.rough_luxite_block": "Rough Luxite Block",
+
+  "trim_material.endelurgy.adamantite": "Adamantite Material",
+  "trim_material.endelurgy.luxite": "Luxite Material",
+  "trim_material.endelurgy.enderite": "Enderite Material"
 }

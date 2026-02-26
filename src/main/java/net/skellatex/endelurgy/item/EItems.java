@@ -21,10 +21,19 @@ public class EItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ENDERITE_INGOT = ITEMS.register("enderite_ingot",
             () -> new Item(new Item.Properties().fireResistant()));
-    public static final RegistryObject<Item> ENDERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("enderite_upgrade_smithing_template", () -> new EnderiteUpgradeItem());
+    public static final RegistryObject<Item> ENDERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("enderite_upgrade_smithing_template",
+            () -> new EnderiteUpgradeItem());
     public static final RegistryObject<Item> ENDERITE_APPLE = ITEMS.register("enderite_apple",
             () -> new EnchantedGoldenAppleItem((new Item.Properties().food(EFoods.ENDERITE_APPLE).rarity(Rarity.EPIC).fireResistant())));
     public static final RegistryObject<Item> CRUSHED_RAW_ADAMANTITE = ITEMS.register("crushed_raw_adamantite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ADAMANTITE_NUGGET = ITEMS.register("raw_adamantite_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_LUXITE = ITEMS.register("rough_luxite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LUXITE_SHARD = ITEMS.register("luxite_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_LUXITE_SHARD = ITEMS.register("rough_luxite_shard",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ADAMANTITE_SWORD = ITEMS.register("adamantite_sword",

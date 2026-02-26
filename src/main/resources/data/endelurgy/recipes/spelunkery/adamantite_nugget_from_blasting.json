@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    {
+      "modid": "spelunkery",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "cookingtime": 12,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "endelurgy:raw_adamantite_nugget"
+  },
+  "result": "endelurgy:adamantite_nugget"
+}

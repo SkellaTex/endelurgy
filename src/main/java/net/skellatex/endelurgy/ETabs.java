@@ -1,5 +1,6 @@
 package net.skellatex.endelurgy;
 
+import com.simibubi.create.AllCreativeModeTabs;
 import net.minecraftforge.fml.ModList;
 import net.skellatex.endelurgy.block.EBlocks;
 import net.skellatex.endelurgy.item.EItems;
@@ -17,6 +18,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 import static net.skellatex.endelurgy.ModCompat.CREATE_ID;
+import static net.skellatex.endelurgy.ModCompat.SPELUNKERY_ID;
 
 @EventBusSubscriber(modid = Endelurgy.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ETabs {
@@ -61,6 +63,7 @@ public class ETabs {
             putBefore(entries, Blocks.REDSTONE_BLOCK, EBlocks.ADAMANTITE_BLOCK);
             putBefore(entries, Blocks.NETHERITE_BLOCK, EBlocks.LUXITE_BLOCK);
             putAfter(entries, Blocks.NETHERITE_BLOCK, EBlocks.ENDERITE_BLOCK);
+            putAfter(entries, EBlocks.LUXITE_BLOCK.get(), EBlocks.ROUGH_LUXITE_BLOCK);
         }
 
         if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -79,8 +82,11 @@ public class ETabs {
             putBefore(entries, Items.NETHERITE_SCRAP, EItems.ADAMANTITE_INGOT);
             putAfter(entries, Items.NETHERITE_INGOT, EItems.ENDERITE_INGOT);
             putAfter(entries, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, EItems.ENDERITE_UPGRADE_SMITHING_TEMPLATE);
-            if (ModList.get().isLoaded(CREATE_ID))  {
-                putAfter(entries, EItems.RAW_ADAMANTITE.get(), EItems.CRUSHED_RAW_ADAMANTITE);
+            if (ModList.get().isLoaded(SPELUNKERY_ID)) {
+                putBefore(entries, Items.COAL, EItems.RAW_ADAMANTITE_NUGGET);
+                putAfter(entries, EItems.RAW_ADAMANTITE_NUGGET.get(), EItems.ROUGH_LUXITE_SHARD);
+                putAfter(entries, Items.RAW_GOLD, EItems.ROUGH_LUXITE);
+                putAfter(entries, Items.GOLD_NUGGET, EItems.LUXITE_SHARD);
             }
         }
 
@@ -112,6 +118,12 @@ public class ETabs {
             putAfter(entries, EItems.ENDERITE_HELMET.get(), EItems.ENDERITE_CHESTPLATE);
             putAfter(entries, EItems.ENDERITE_CHESTPLATE.get(), EItems.ENDERITE_LEGGINGS);
             putAfter(entries, EItems.ENDERITE_LEGGINGS.get(), EItems.ENDERITE_BOOTS);
+        }
+
+        if (ModList.get().isLoaded(CREATE_ID)) {
+            if (event.getTabKey().equals(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())) {
+                event.accept(EItems.CRUSHED_RAW_ADAMANTITE);
+            }
         }
 
     }

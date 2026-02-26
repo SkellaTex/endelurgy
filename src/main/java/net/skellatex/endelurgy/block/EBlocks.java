@@ -140,7 +140,7 @@ public class EBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ENDRITUS = registerBlock("endritus",
-            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL).sound(SoundType.ROOTED_DIRT)));
 
     public static final RegistryObject<Block> RAW_PURPUR_BLOCK = registerBlock("raw_purpur_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
@@ -159,6 +159,10 @@ public class EBlocks {
 
     public static final RegistryObject<Block> PURPUR_WALL = registerBlock("purpur_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK).strength(1.5f, 6f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ROUGH_LUXITE_BLOCK = registerBlock("rough_luxite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
+                    .strength(5f, 6f).lightLevel((state) -> 14).requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
 
     public static final RegistryObject<Block> LUXITE_BLOCK = registerBlock("luxite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)

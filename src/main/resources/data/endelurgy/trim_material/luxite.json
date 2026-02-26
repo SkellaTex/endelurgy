@@ -1,0 +1,9 @@
+{
+  "asset_name": "luxite",
+  "description": {
+    "color": "#FEFE36",
+    "translate": "trim_material.endelurgy.luxite"
+  },
+  "ingredient": "endelurgy:luxite",
+  "item_model_index": -1.0
+}
