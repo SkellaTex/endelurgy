@@ -140,7 +140,10 @@ public class EBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ENDRITUS = registerBlock("endritus",
-            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL).sound(SoundType.ROOTED_DIRT)));
+            () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.ROOTED_DIRT)));
+
+    public static final RegistryObject<Block> INFESTED_ENDRITUS = registerBlock("infested_endritus",
+            () -> new InfestedEndritusBlock(ENDRITUS.get(), BlockBehaviour.Properties.copy(Blocks.ROOTED_DIRT)));
 
     public static final RegistryObject<Block> RAW_PURPUR_BLOCK = registerBlock("raw_purpur_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)

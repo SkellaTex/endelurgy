@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:end/dragon_egg",
+  "criteria": {
+    "dragon_egg_omelet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:dragon_egg_omelet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.dragon_egg_omelet.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "endelurgy:dragon_egg_omelet"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.dragon_egg_omelet.title"
+    }
+  },
+  "requirements": [
+    [
+      "dragon_egg_omelet"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

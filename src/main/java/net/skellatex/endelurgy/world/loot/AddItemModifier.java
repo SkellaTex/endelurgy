@@ -11,30 +11,51 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class AddItemModifier extends LootModifier {
-    public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(()
-            -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, AddItemModifier::new)));
-    private final Item item;
+import javax.annotation.Nonnull;
 
-    public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
+public class AddItemModifier extends LootModifier
+{
+    public static final Supplier<Codec<AddItemModifier>> CODEC = Suppliers.memoize(() ->
+            RecordCodecBuilder.create(inst -> codecStart(inst).and(
+                            inst.group(
+                                    ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter((m) -> m.addedItem),
+                                    Codec.INT.optionalFieldOf("count", 1).forGetter((m) -> m.count)
+                            )
+                    )
+                    .apply(inst, AddItemModifier::new)));
+
+    private final Item addedItem;
+    private final int count;
+
+    /**
+     * This loot modifier adds an item to the loot table, given the conditions specified.
+     */
+    protected AddItemModifier(LootItemCondition[] conditionsIn, Item addedItemIn, int count) {
         super(conditionsIn);
-        this.item = item;
+        this.addedItem = addedItemIn;
+        this.count = count;
     }
 
+    @Nonnull
     @Override
-    protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        for(LootItemCondition condition : this.conditions) {
-            if(!condition.test(context)) {
-                return generatedLoot;
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        ItemStack addedStack = new ItemStack(addedItem, count);
+
+        if (addedStack.getCount() < addedStack.getMaxStackSize()) {
+            generatedLoot.add(addedStack);
+        } else {
+            int i = addedStack.getCount();
+
+            while (i > 0) {
+                ItemStack subStack = addedStack.copy();
+                subStack.setCount(Math.min(addedStack.getMaxStackSize(), i));
+                i -= subStack.getCount();
+                generatedLoot.add(subStack);
             }
         }
-
-        generatedLoot.add(new ItemStack(this.item));
 
         return generatedLoot;
     }

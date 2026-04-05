@@ -18,25 +18,25 @@ import net.skellatex.endelurgy.item.EItems;
 
 public class EMobEffects {
 
-    public static final DeferredRegister<MobEffect> DEF_REG = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Endelurgy.MOD_ID);
-    public static final DeferredRegister<Potion> POTION_DEF_REG = DeferredRegister.create(ForgeRegistries.POTIONS, Endelurgy.MOD_ID);
+    public static final DeferredRegister<MobEffect> MOB_EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Endelurgy.MOD_ID);
+    public static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, Endelurgy.MOD_ID);
 
-    public static final RegistryObject<MobEffect> ENERVATION = DEF_REG.register("enervation", () -> new EnervationEffect());
-    public static final RegistryObject<MobEffect> RESTORATION = DEF_REG.register("restoration", () -> new RestorationEffect());
-    public static final RegistryObject<MobEffect> CORROSION = DEF_REG.register("corrosion", () -> new CorrosionEffect());
+    public static final RegistryObject<MobEffect> ENERVATION = MOB_EFFECTS.register("enervation", () -> new EnervationEffect());
+    public static final RegistryObject<MobEffect> RESTORATION = MOB_EFFECTS.register("restoration", () -> new RestorationEffect());
+    public static final RegistryObject<MobEffect> CORROSION = MOB_EFFECTS.register("corrosion", () -> new CorrosionEffect());
 
-    public static final RegistryObject<Potion> VITALITY_POTION = POTION_DEF_REG.register("vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600)));
-    public static final RegistryObject<Potion> LONG_VITALITY_POTION = POTION_DEF_REG.register("long_vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 9600)));
-    public static final RegistryObject<Potion> STRONG_VITALITY_POTION = POTION_DEF_REG.register("strong_vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1800, 1)));
-    public static final RegistryObject<Potion> ENERVATION_POTION = POTION_DEF_REG.register("enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 3600)));
-    public static final RegistryObject<Potion> LONG_ENERVATION_POTION = POTION_DEF_REG.register("long_enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 9600)));
-    public static final RegistryObject<Potion> STRONG_ENERVATION_POTION = POTION_DEF_REG.register("strong_enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 1800, 1)));
-    public static final RegistryObject<Potion> CORROSION_POTION = POTION_DEF_REG.register("corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 3600)));
-    public static final RegistryObject<Potion> LONG_CORROSION_POTION = POTION_DEF_REG.register("long_corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 9600)));
-    public static final RegistryObject<Potion> STRONG_CORROSION_POTION = POTION_DEF_REG.register("strong_corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 1800, 1)));
-    public static final RegistryObject<Potion> RESTORATION_POTION = POTION_DEF_REG.register("restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 3600)));
-    public static final RegistryObject<Potion> LONG_RESTORATION_POTION = POTION_DEF_REG.register("long_restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 9600)));
-    public static final RegistryObject<Potion> STRONG_RESTORATION_POTION = POTION_DEF_REG.register("strong_restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 1800, 1)));
+    public static final RegistryObject<Potion> VITALITY_POTION = POTIONS.register("vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600)));
+    public static final RegistryObject<Potion> LONG_VITALITY_POTION = POTIONS.register("long_vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 9600)));
+    public static final RegistryObject<Potion> STRONG_VITALITY_POTION = POTIONS.register("strong_vitality", () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1800, 1)));
+    public static final RegistryObject<Potion> ENERVATION_POTION = POTIONS.register("enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 3600)));
+    public static final RegistryObject<Potion> LONG_ENERVATION_POTION = POTIONS.register("long_enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 9600)));
+    public static final RegistryObject<Potion> STRONG_ENERVATION_POTION = POTIONS.register("strong_enervation", () -> new Potion(new MobEffectInstance(ENERVATION.get(), 1800, 1)));
+    public static final RegistryObject<Potion> CORROSION_POTION = POTIONS.register("corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 3600)));
+    public static final RegistryObject<Potion> LONG_CORROSION_POTION = POTIONS.register("long_corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 9600)));
+    public static final RegistryObject<Potion> STRONG_CORROSION_POTION = POTIONS.register("strong_corrosion", () -> new Potion(new MobEffectInstance(CORROSION.get(), 1800, 1)));
+    public static final RegistryObject<Potion> RESTORATION_POTION = POTIONS.register("restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 3600)));
+    public static final RegistryObject<Potion> LONG_RESTORATION_POTION = POTIONS.register("long_restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 9600)));
+    public static final RegistryObject<Potion> STRONG_RESTORATION_POTION = POTIONS.register("strong_restoration", () -> new Potion(new MobEffectInstance(RESTORATION.get(), 1800, 1)));
 
     public static void setup() {
         BrewingRecipeRegistry.addRecipe(new ProperBrewingRecipe(Ingredient.of(createPotion(Potions.AWKWARD)), Ingredient.of(EItems.ADAMANTITE_INGOT.get()), createPotion(VITALITY_POTION)));

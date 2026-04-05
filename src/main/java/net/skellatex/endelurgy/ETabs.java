@@ -90,10 +90,6 @@ public class ETabs {
             }
         }
 
-        if (tab == CreativeModeTabs.FOOD_AND_DRINKS) {
-            putAfter(entries, Items.ENCHANTED_GOLDEN_APPLE, EItems.ENDERITE_APPLE);
-        }
-
         if (tab == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             putBefore(entries, Items.NETHERITE_SHOVEL, EItems.ADAMANTITE_SHOVEL);
             putAfter(entries, EItems.ADAMANTITE_SHOVEL.get(), EItems.ADAMANTITE_PICKAXE);
@@ -116,8 +112,11 @@ public class ETabs {
             putAfter(entries, Items.NETHERITE_AXE, EItems.ENDERITE_AXE);
             putAfter(entries, Items.NETHERITE_BOOTS, EItems.ENDERITE_HELMET);
             putAfter(entries, EItems.ENDERITE_HELMET.get(), EItems.ENDERITE_CHESTPLATE);
-            putAfter(entries, EItems.ENDERITE_CHESTPLATE.get(), EItems.ENDERITE_LEGGINGS);
+            putAfter(entries, EItems.ENDERITE_CHESTPLATE.get(), EItems.WINGED_ENDERITE_CHESTPLATE);
+            putAfter(entries, EItems.WINGED_ENDERITE_CHESTPLATE.get(), EItems.ENDERITE_LEGGINGS);
             putAfter(entries, EItems.ENDERITE_LEGGINGS.get(), EItems.ENDERITE_BOOTS);
+            putAfter(entries, Items.DIAMOND_HORSE_ARMOR, EItems.ADAMANTITE_HORSE_ARMOR);
+            putAfter(entries, EItems.ADAMANTITE_HORSE_ARMOR.get(), EItems.ENDERITE_HORSE_ARMOR);
         }
 
         if (ModList.get().isLoaded(CREATE_ID)) {

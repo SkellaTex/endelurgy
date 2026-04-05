@@ -9,6 +9,7 @@
   "item.endelurgy.enderite_ingot": "Enderite Ingot",
   "block.endelurgy.enderite_block": "Block of Enderite",
   "item.endelurgy.enderite_apple": "Enderite Apple",
+  "item.endelurgy.dragon_egg_omelet": "Dragon Egg Omelet",
 
   "item.endelurgy.enderite_upgrade_smithing_template": "Smithing Template",
   "item.endelurgy.enderite_upgrade_smithing_template.description_0": "§7Enderite Upgrade",
@@ -28,6 +29,7 @@
   "item.endelurgy.adamantite_chestplate": "Adamantite Chestplate",
   "item.endelurgy.adamantite_leggings": "Adamantite Leggings",
   "item.endelurgy.adamantite_boots": "Adamantite Boots",
+  "item.endelurgy.adamantite_horse_armor": "Adamantite Horse Armor",
 
   "item.endelurgy.enderite_sword": "Enderite Sword",
   "item.endelurgy.enderite_pickaxe": "Enderite Pickaxe",
@@ -37,8 +39,10 @@
 
   "item.endelurgy.enderite_helmet": "Enderite Helmet",
   "item.endelurgy.enderite_chestplate": "Enderite Chestplate",
+  "item.endelurgy.winged_enderite_chestplate": "Winged Enderite Chestplate",
   "item.endelurgy.enderite_leggings": "Enderite Leggings",
   "item.endelurgy.enderite_boots": "Enderite Boots",
+  "item.endelurgy.enderite_horse_armor": "Enderite Horse Armor",
 
   "block.endelurgy.end_lapis_ore": "End Lapis Lazuli Ore",
   "block.endelurgy.voidslate_lapis_ore": "Voidslate Lapis Lazuli Ore",
@@ -48,6 +52,7 @@
 
   "block.endelurgy.rooted_end_stone": "Rooted End Stone",
   "block.endelurgy.endritus": "Endritus",
+  "block.endelurgy.infested_endritus": "Infested Endritus",
   "block.endelurgy.raw_purpur_block": "Raw Purpur Block",
   "block.endelurgy.raw_purpur_stairs": "Raw Purpur Stairs",
   "block.endelurgy.raw_purpur_slab": "Raw Purpur Slab",
@@ -91,11 +96,15 @@
   "advancements.end.obtain_enderite.title": "Ultimate Alloy",
   "advancements.end.obtain_enderite.description": "Obtain an Enderite Ingot",
   "advancements.husbandry.obtain_enderite_hoe.title": "Obsessive Dedication",
-  "advancements.husbandry.obtain_enderite_hoe.description": "For the worthy",
+  "advancements.husbandry.obtain_enderite_hoe.description": "Only for those who are worthy",
   "advancements.end.enderite_armor.title": "Immovable Object",
   "advancements.end.enderite_armor.description": "Get a full set of Enderite armor",
-  "advancements.end.enderite_apple.title": "INVINCIBLE",
-  "advancements.end.enderite_apple.description": "[title card]",
+  "advancements.end.craft_winged_enderite_chestplate.title": "Unstoppable Force",
+  "advancements.end.craft_winged_enderite_chestplate.description": "Craft a Winged Enderite Chestplate",
+  "advancements.end.eat_enderite_apple.title": "INVINCIBLE",
+  "advancements.end.eat_enderite_apple.description": "[title card]",
+  "advancements.end.dragon_egg_omelet.title": "The Last Generation",
+  "advancements.end.dragon_egg_omelet.description": "Found a use for the Dragon Egg",
 
   "effect.endelurgy.vitality": "Vitality",
   "item.minecraft.potion.effect.vitality": "Potion of Vitality",
@@ -166,5 +175,7 @@
 
   "trim_material.endelurgy.adamantite": "Adamantite Material",
   "trim_material.endelurgy.luxite": "Luxite Material",
-  "trim_material.endelurgy.enderite": "Enderite Material"
+  "trim_material.endelurgy.enderite": "Enderite Material",
+
+  "attribute.endelurgy.name.generic.damage_protection": "Damage Resistance"
 }

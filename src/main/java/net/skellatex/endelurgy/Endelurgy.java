@@ -14,8 +14,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.skellatex.endelurgy.misc.EAttributes;
 import net.skellatex.endelurgy.potion.EMobEffects;
-import net.skellatex.endelurgy.world.loot.ModLootModifiers;
+import net.skellatex.endelurgy.world.feature.EFeatures;
+import net.skellatex.endelurgy.world.loot.ELootModifiers;
 import net.skellatex.endelurgy.misc.EParticleTypes;
 import org.slf4j.Logger;
 
@@ -30,10 +32,12 @@ public class Endelurgy {
         modEventBus.addListener(this::commonSetup);
         EItems.register(modEventBus);
         EBlocks.register(modEventBus);
-        ModLootModifiers.register(modEventBus);
+        ELootModifiers.register(modEventBus);
         EParticleTypes.register(modEventBus);
-        EMobEffects.DEF_REG.register(modEventBus);
-        EMobEffects.POTION_DEF_REG.register(modEventBus);
+        EMobEffects.MOB_EFFECTS.register(modEventBus);
+        EMobEffects.POTIONS.register(modEventBus);
+        EFeatures.FEATURES.register(modEventBus);
+        EAttributes.ATTRIBUTES.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

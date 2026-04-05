@@ -1,0 +1,40 @@
+{
+  "parent": "endelurgy:end/enderite_armor",
+  "criteria": {
+    "enderite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:winged_enderite_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.craft_winged_enderite_chestplate.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:winged_enderite_chestplate"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.craft_winged_enderite_chestplate.title"
+    }
+  },
+  "requirements": [
+    [
+      "enderite"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

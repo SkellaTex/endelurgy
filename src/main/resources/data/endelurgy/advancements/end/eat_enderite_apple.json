@@ -15,7 +15,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.end.enderite_apple.description"
+      "translate": "advancements.end.eat_enderite_apple.description"
     },
     "frame": "challenge",
     "hidden": true,
@@ -24,7 +24,7 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.end.enderite_apple.title"
+      "translate": "advancements.end.eat_enderite_apple.title"
     }
   },
   "requirements": [

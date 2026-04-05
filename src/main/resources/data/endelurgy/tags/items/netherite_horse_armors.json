@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "caverns_and_chasms:netherite_horse_armor",
+      "required": false
+    },
+    {
+      "id": "netherite_horse_armor:netherite_horse_armor",
+      "required": false
+    },
+    {
+      "id": "nha:netherite_horse_armor",
+      "required": false
+    },
+    {
+      "id": "missing_horse_armors:netherite_horse_armor",
+      "required": false
+    }
+  ]
+}

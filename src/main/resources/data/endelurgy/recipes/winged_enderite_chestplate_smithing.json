@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:elytra"
+  },
+  "base": {
+    "item": "endelurgy:enderite_chestplate"
+  },
+  "result": {
+    "item": "endelurgy:winged_enderite_chestplate"
+  },
+  "template": {
+    "item": "endelurgy:enderite_upgrade_smithing_template"
+  }
+}

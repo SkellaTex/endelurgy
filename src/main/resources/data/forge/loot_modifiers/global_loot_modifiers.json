@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "endelurgy:enderite_upgrade_smithing_template"
+    "endelurgy:enderite_upgrade_smithing_template",
+    "endelurgy:adamantite_horse_armor"
   ]
 }

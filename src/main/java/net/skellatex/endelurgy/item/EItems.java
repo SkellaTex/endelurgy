@@ -25,6 +25,8 @@ public class EItems {
             () -> new EnderiteUpgradeItem());
     public static final RegistryObject<Item> ENDERITE_APPLE = ITEMS.register("enderite_apple",
             () -> new EnchantedGoldenAppleItem((new Item.Properties().food(EFoods.ENDERITE_APPLE).rarity(Rarity.EPIC).fireResistant())));
+    public static final RegistryObject<Item> DRAGON_EGG_OMELET = ITEMS.register("dragon_egg_omelet",
+            () -> new BowlFoodItem((new Item.Properties().food(EFoods.DRAGON_EGG_OMELET).rarity(Rarity.EPIC))));
     public static final RegistryObject<Item> CRUSHED_RAW_ADAMANTITE = ITEMS.register("crushed_raw_adamantite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_ADAMANTITE_NUGGET = ITEMS.register("raw_adamantite_nugget",
@@ -56,6 +58,9 @@ public class EItems {
     public static final RegistryObject<Item> ADAMANTITE_BOOTS = ITEMS.register("adamantite_boots",
             () -> new AdamantiteArmorItem(EArmorMaterials.ADAMANTITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> ADAMANTITE_HORSE_ARMOR = ITEMS.register("adamantite_horse_armor",
+            () -> new AdamantiteHorseArmorItem(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> ENDERITE_SWORD = ITEMS.register("enderite_sword",
             () -> new SwordItem(EToolTiers.ENDERITE,5, -2.4F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_PICKAXE = ITEMS.register("enderite_pickaxe",
@@ -70,11 +75,16 @@ public class EItems {
     public static final RegistryObject<Item> ENDERITE_HELMET = ITEMS.register("enderite_helmet",
             () -> new EnderiteHelmetItem(EArmorMaterials.ENDERITE, ArmorItem.Type.HELMET, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_CHESTPLATE = ITEMS.register("enderite_chestplate",
-            () -> new ArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+            () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_LEGGINGS = ITEMS.register("enderite_leggings",
-            () -> new ArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+            () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_BOOTS = ITEMS.register("enderite_boots",
-            () -> new ArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+            () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> WINGED_ENDERITE_CHESTPLATE = ITEMS.register("winged_enderite_chestplate",
+            () -> new WingedEnderiteChestplateItem(EArmorMaterials.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor",
+            () -> new EnderiteHorseArmorItem(new Item.Properties().fireResistant().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
