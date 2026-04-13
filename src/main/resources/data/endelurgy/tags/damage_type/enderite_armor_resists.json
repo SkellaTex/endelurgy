@@ -3,14 +3,43 @@
     "#minecraft:is_fire",
     "#minecraft:is_freezing",
     "#minecraft:is_projectile",
+    "minecraft:falling_anvil",
+    "minecraft:falling_block",
+    "minecraft:falling_stalactite",
     "#minecraft:is_explosion",
     "minecraft:generic",
     "minecraft:player_attack",
     "minecraft:mob_attack",
     "minecraft:mob_attack_no_aggro",
-    "minecraft:magic",
-    "minecraft:indirect_magic",
-    "minecraft:sonic_boom",
-    "minecraft:thorns"
+    "minecraft:cramming",
+    "minecraft:sting",
+    "#minecraft:witch_resistant_to",
+    "minecraft:wither",
+    "minecraft:wither_skull",
+    "minecraft:dragon_breath",
+    {
+      "id": "create:crush",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_drill",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_roller",
+      "required": false
+    },
+    {
+      "id": "create:mechanical_saw",
+      "required": false
+    },
+    {
+      "id": "create:run_over",
+      "required": false
+    },
+    {
+      "id": "create:potato_cannon",
+      "required": false
+    }
   ]
 }

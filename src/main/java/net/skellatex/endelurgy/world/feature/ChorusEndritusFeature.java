@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.ChorusFlowerBlock;
 import net.minecraft.world.level.levelgen.feature.ChorusPlantFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-import net.skellatex.endelurgy.block.EBlocks;
+import net.skellatex.endelurgy.registry.EBlocks;
 
 public class ChorusEndritusFeature extends ChorusPlantFeature {
 

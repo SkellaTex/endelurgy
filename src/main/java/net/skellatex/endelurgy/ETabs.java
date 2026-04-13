@@ -2,8 +2,8 @@ package net.skellatex.endelurgy;
 
 import com.simibubi.create.AllCreativeModeTabs;
 import net.minecraftforge.fml.ModList;
-import net.skellatex.endelurgy.block.EBlocks;
-import net.skellatex.endelurgy.item.EItems;
+import net.skellatex.endelurgy.registry.EBlocks;
+import net.skellatex.endelurgy.registry.EItems;
 import java.util.function.Supplier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
@@ -67,7 +67,7 @@ public class ETabs {
         }
 
         if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
-            putAfter(entries, Blocks.NETHER_QUARTZ_ORE, EBlocks.END_LAPIS_ORE);
+            putAfter(entries, Blocks.ANCIENT_DEBRIS, EBlocks.END_LAPIS_ORE);
             putAfter(entries, EBlocks.END_LAPIS_ORE.get(), EBlocks.VOIDSLATE_LAPIS_ORE);
             putAfter(entries, EBlocks.VOIDSLATE_LAPIS_ORE.get(), EBlocks.END_ADAMANTITE_ORE);
             putAfter(entries, EBlocks.END_ADAMANTITE_ORE.get(), EBlocks.VOIDSLATE_ADAMANTITE_ORE);

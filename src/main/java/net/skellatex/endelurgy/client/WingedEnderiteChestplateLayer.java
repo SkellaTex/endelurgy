@@ -24,7 +24,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.skellatex.endelurgy.Endelurgy;
-import net.skellatex.endelurgy.item.EItems;
+import net.skellatex.endelurgy.registry.EItems;
 
 @OnlyIn(Dist.CLIENT)
 @Mod.EventBusSubscriber(modid = Endelurgy.MOD_ID, bus = Bus.MOD)
