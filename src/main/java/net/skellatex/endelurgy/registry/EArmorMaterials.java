@@ -13,7 +13,7 @@ public enum EArmorMaterials implements ArmorMaterial {
     ADAMANTITE("adamantite", 35, new int[]{ 3, 8, 6, 3 }, 20,
             SoundEvents.ARMOR_EQUIP_GOLD, 2f, 0f, () -> Ingredient.of(EItems.ADAMANTITE_INGOT.get())),
     ENDERITE("enderite", 40, new int[]{ 3, 8, 6, 3 }, 25,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.25f, () -> Ingredient.of(EItems.ENDERITE_INGOT.get()));
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.25f, () -> Ingredient.of(ETags.Items.ENDERITE_REPAIR_MATERIALS));
 
 
     private final String name;

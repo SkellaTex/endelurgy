@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "type": "blueprint:paletted_permutations",
+      "palette_key": "clayworks:entity/decorated_pot_trim_palettes/trim_palette",
+      "permutations": {
+        "endelurgy_adamantite": "endelurgy:entity/decorated_pot_trim_palettes/adamantite",
+        "endelurgy_luxite": "endelurgy:entity/decorated_pot_trim_palettes/luxite",
+        "endelurgy_enderite": "endelurgy:entity/decorated_pot_trim_palettes/enderite"
+      },
+      "sources": [
+        {
+          "type": "minecraft:directory",
+          "prefix": "entity/decorated_pot_trim_patterns/",
+          "source": "entity/decorated_pot_trim_patterns"
+        }
+      ]
+    }
+  ]
+}

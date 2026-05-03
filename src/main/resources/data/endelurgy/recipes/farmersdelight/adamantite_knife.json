@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "modid": "farmersdelight",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "tag": "forge:ingots/adamantite"
+    },
+    "N": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "E",
+    "N"
+  ],
+  "result": {
+    "item": "endelurgy:adamantite_knife"
+  },
+  "show_notification": true
+}

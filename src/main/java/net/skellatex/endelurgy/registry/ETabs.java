@@ -1,9 +1,10 @@
-package net.skellatex.endelurgy;
+package net.skellatex.endelurgy.registry;
 
 import com.simibubi.create.AllCreativeModeTabs;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.ModList;
-import net.skellatex.endelurgy.registry.EBlocks;
-import net.skellatex.endelurgy.registry.EItems;
+import net.skellatex.endelurgy.Endelurgy;
+
 import java.util.function.Supplier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,12 +17,14 @@ import net.minecraftforge.common.util.MutableHashedLinkedMap;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
-import static net.skellatex.endelurgy.ModCompat.CREATE_ID;
-import static net.skellatex.endelurgy.ModCompat.SPELUNKERY_ID;
+import static net.skellatex.endelurgy.content.compat.ModCompat.*;
 
 @EventBusSubscriber(modid = Endelurgy.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class ETabs {
+
+    private static final ResourceLocation FD_TAB = ResourceLocation.fromNamespaceAndPath(FARMERS_DELIGHT_ID, FARMERS_DELIGHT_ID);
 
     @SubscribeEvent
     public static void buildCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
@@ -123,6 +126,10 @@ public class ETabs {
             if (event.getTabKey().equals(AllCreativeModeTabs.BASE_CREATIVE_TAB.getKey())) {
                 event.accept(EItems.CRUSHED_RAW_ADAMANTITE);
             }
+        }
+        if (ModList.get().isLoaded(FARMERS_DELIGHT_ID) && tab.location().equals(FD_TAB)) {
+            putBefore(entries, ModItems.NETHERITE_KNIFE.get(), EItems.ADAMANTITE_KNIFE);
+            putAfter(entries, ModItems.NETHERITE_KNIFE.get(), EItems.ENDERITE_KNIFE);
         }
 
     }

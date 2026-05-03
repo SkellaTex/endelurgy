@@ -1,6 +1,5 @@
 package net.skellatex.endelurgy.content.potion;
 
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;

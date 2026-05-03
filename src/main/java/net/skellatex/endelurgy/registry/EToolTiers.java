@@ -7,13 +7,14 @@ import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.TierSortingRegistry;
+import net.skellatex.endelurgy.registry.ETags;
 
 import java.util.List;
 
 public class EToolTiers {
     public static final Tier ENDERITE = TierSortingRegistry.registerTier(
             new ForgeTier(5, 2500, 12f, 4f, 25,
-                    ETags.Blocks.NEEDS_ENDERITE_TOOL, () -> Ingredient.of(EItems.ENDERITE_INGOT.get())),
+                    ETags.Blocks.NEEDS_ENDERITE_TOOL, () -> Ingredient.of(ETags.Items.ENDERITE_REPAIR_MATERIALS)),
             new ResourceLocation(Endelurgy.MOD_ID, "enderite"), List.of(Tiers.NETHERITE), List.of());
 
     public static final Tier ADAMANTITE = TierSortingRegistry.registerTier(

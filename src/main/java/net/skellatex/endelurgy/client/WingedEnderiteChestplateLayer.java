@@ -21,13 +21,10 @@ import net.minecraft.world.entity.player.PlayerModelPart;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.skellatex.endelurgy.Endelurgy;
 import net.skellatex.endelurgy.registry.EItems;
 
 @OnlyIn(Dist.CLIENT)
-@Mod.EventBusSubscriber(modid = Endelurgy.MOD_ID, bus = Bus.MOD)
 public class WingedEnderiteChestplateLayer<T extends LivingEntity, M extends EntityModel<T>> extends RenderLayer<T, M> {
     private static final ResourceLocation WINGS_LAYER_LOCATION = new ResourceLocation(Endelurgy.MOD_ID, "textures/entity/winged_enderite_chestplate.png");
     private final ElytraModel<T> elytraModel;

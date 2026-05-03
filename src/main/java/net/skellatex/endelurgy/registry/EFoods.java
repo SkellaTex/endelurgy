@@ -9,7 +9,5 @@ public class EFoods {
             .saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 4), 1.0f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 1), 1.0F).build();
     public static final FoodProperties DRAGON_EGG_OMELET = new FoodProperties.Builder().nutrition(20).alwaysEat()
-            .saturationMod(20f).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 72000, 2), 1.0f)
-            .effect(new MobEffectInstance(MobEffects.REGENERATION, 72000, 1), 1.0F)
-            .effect(new MobEffectInstance(MobEffects.SATURATION, 72000, 0), 1.0F).build();
+            .saturationMod(0.5f).effect(() -> new MobEffectInstance(MobEffects.SATURATION, 72000, 0), 1.0F).build();
 }

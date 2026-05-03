@@ -16,9 +16,13 @@ public class ETags {
         public static final TagKey<Block> CREATES_NOXROCK_CLOUD = registerBlockTag("creates_noxrock_cloud");
     }
 
-        public static class DamageTypes {
-            public static final TagKey<DamageType> ENDERITE_ARMOR_RESISTS = registerDamageTypeTag("enderite_armor_resists");
-        }
+    public static class DamageTypes {
+        public static final TagKey<DamageType> ENDERITE_ARMOR_RESISTS = registerDamageTypeTag("enderite_armor_resists");
+    }
+
+    public static class Items {
+        public static final TagKey<Item> ENDERITE_REPAIR_MATERIALS = registerItemTag("enderite_repair_materials");
+    }
 
         private static TagKey<Item> registerItemTag(String name) {
             return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(Endelurgy.MOD_ID, name));

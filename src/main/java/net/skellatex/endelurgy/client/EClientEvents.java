@@ -19,7 +19,7 @@ public class EClientEvents {
         event.registerLayerDefinition(WingedEnderiteChestplateModel.WINGS_LAYER_LOCATION, WingedEnderiteChestplateModel::createLayer);
     }
 
-    @SubscribeEvent @SuppressWarnings({"unchecked", "rawtypes"})
+    @SubscribeEvent
     public static void addPlayerLayers(EntityRenderersEvent.AddLayers event) {
         for (String skin : event.getSkins()) {
             LivingEntityRenderer<? extends Player, ? extends EntityModel<? extends Player>> renderer = event.getSkin(skin);

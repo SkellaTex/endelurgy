@@ -24,52 +24,52 @@ public class EBlocks {
 
     public static final RegistryObject<Block> NOXROCK = registerBlock("noxrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_STAIRS = registerBlock("noxrock_stairs",
             () -> new StairBlock(() -> EBlocks.NOXROCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 1f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_SLAB = registerBlock("noxrock_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_WALL = registerBlock("noxrock_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 1f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_NOXROCK = registerBlock("polished_noxrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_NOXROCK_STAIRS = registerBlock("polished_noxrock_stairs",
             () -> new StairBlock(() -> EBlocks.POLISHED_NOXROCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_NOXROCK_SLAB = registerBlock("polished_noxrock_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_NOXROCK_WALL = registerBlock("polished_noxrock_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 1f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CHISELED_NOXROCK = registerBlock("chiseled_noxrock",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_BRICKS = registerBlock("noxrock_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_BRICK_STAIRS = registerBlock("noxrock_brick_stairs",
             () -> new StairBlock(() -> EBlocks.NOXROCK_BRICKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_BRICK_SLAB = registerBlock("noxrock_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
-                    .strength(2.5f, 1f).requiresCorrectToolForDrops()));
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NOXROCK_BRICK_WALL = registerBlock("noxrock_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 1f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE = registerBlock("voidslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
@@ -87,38 +87,38 @@ public class EBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(4f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_VOIDSLATE = registerBlock("polished_voidslate",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE)
                     .strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_VOIDSLATE_STAIRS = registerBlock("polished_voidslate_stairs",
             () -> new StairBlock(() -> EBlocks.POLISHED_VOIDSLATE.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_VOIDSLATE_SLAB = registerBlock("polished_voidslate_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE)
                     .strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> POLISHED_VOIDSLATE_WALL = registerBlock("polished_voidslate_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> CHISELED_VOIDSLATE = registerBlock("chiseled_voidslate",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.POLISHED_DEEPSLATE)
                     .strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE_BRICKS = registerBlock("voidslate_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS)
                     .strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE_BRICK_STAIRS = registerBlock("voidslate_brick_stairs",
             () -> new StairBlock(() -> EBlocks.VOIDSLATE_BRICKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE_BRICK_SLAB = registerBlock("voidslate_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS)
                     .strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE_BRICK_WALL = registerBlock("voidslate_brick_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(4.5f, 12f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(4.5f, 12f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> END_LAPIS_ORE = registerBlock("end_lapis_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.STONE)

@@ -1,11 +1,8 @@
 {
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "endelurgy:netherite_horse_armors"
-      }
+      "modid": "farmersdelight",
+      "type": "forge:mod_loaded"
     }
   ],
   "type": "minecraft:smithing_transform",
@@ -13,10 +10,10 @@
     "item": "endelurgy:enderite_ingot"
   },
   "base": {
-    "tag": "endelurgy:netherite_horse_armors"
+    "item": "farmersdelight:netherite_knife"
   },
   "result": {
-    "item": "endelurgy:enderite_horse_armor"
+    "item": "endelurgy:enderite_knife"
   },
   "template": {
     "item": "endelurgy:enderite_upgrade_smithing_template"

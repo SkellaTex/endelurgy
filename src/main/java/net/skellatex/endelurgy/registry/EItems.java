@@ -1,17 +1,25 @@
 package net.skellatex.endelurgy.registry;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.fml.ModList;
 import net.skellatex.endelurgy.Endelurgy;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.skellatex.endelurgy.content.compat.FarmersDelightCompat;
 import net.skellatex.endelurgy.content.item.*;
+
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+import static net.skellatex.endelurgy.content.compat.ModCompat.FARMERS_DELIGHT_ID;
 
 public class EItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Endelurgy.MOD_ID);
 
+    // Materials
     public static final RegistryObject<Item> RAW_ADAMANTITE = ITEMS.register("raw_adamantite",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ADAMANTITE_INGOT = ITEMS.register("adamantite_ingot",
@@ -24,21 +32,14 @@ public class EItems {
             () -> new Item(new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("enderite_upgrade_smithing_template",
             () -> new EnderiteUpgradeItem());
+
+    // Foods
     public static final RegistryObject<Item> ENDERITE_APPLE = ITEMS.register("enderite_apple",
             () -> new EnchantedGoldenAppleItem((new Item.Properties().food(EFoods.ENDERITE_APPLE).rarity(Rarity.EPIC).fireResistant())));
     public static final RegistryObject<Item> DRAGON_EGG_OMELET = ITEMS.register("dragon_egg_omelet",
             () -> new BowlFoodItem((new Item.Properties().food(EFoods.DRAGON_EGG_OMELET).rarity(Rarity.EPIC))));
-    public static final RegistryObject<Item> CRUSHED_RAW_ADAMANTITE = ITEMS.register("crushed_raw_adamantite",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RAW_ADAMANTITE_NUGGET = ITEMS.register("raw_adamantite_nugget",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ROUGH_LUXITE = ITEMS.register("rough_luxite",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUXITE_SHARD = ITEMS.register("luxite_shard",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ROUGH_LUXITE_SHARD = ITEMS.register("rough_luxite_shard",
-            () -> new Item(new Item.Properties()));
 
+    // Admanantite Equipment
     public static final RegistryObject<Item> ADAMANTITE_SWORD = ITEMS.register("adamantite_sword",
             () -> new SwordItem(EToolTiers.ADAMANTITE,2, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> ADAMANTITE_PICKAXE = ITEMS.register("adamantite_pickaxe",
@@ -62,6 +63,7 @@ public class EItems {
     public static final RegistryObject<Item> ADAMANTITE_HORSE_ARMOR = ITEMS.register("adamantite_horse_armor",
             () -> new AdamantiteHorseArmorItem(new Item.Properties().stacksTo(1)));
 
+    // Enderite Equipment
     public static final RegistryObject<Item> ENDERITE_SWORD = ITEMS.register("enderite_sword",
             () -> new SwordItem(EToolTiers.ENDERITE,5, -2.4F, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_PICKAXE = ITEMS.register("enderite_pickaxe",
@@ -87,7 +89,29 @@ public class EItems {
     public static final RegistryObject<Item> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor",
             () -> new EnderiteHorseArmorItem(new Item.Properties().fireResistant().stacksTo(1)));
 
+    // Compat
+    public static final RegistryObject<Item> CRUSHED_RAW_ADAMANTITE = ITEMS.register("crushed_raw_adamantite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ADAMANTITE_NUGGET = ITEMS.register("raw_adamantite_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_LUXITE = ITEMS.register("rough_luxite",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LUXITE_SHARD = ITEMS.register("luxite_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROUGH_LUXITE_SHARD = ITEMS.register("rough_luxite_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ADAMANTITE_KNIFE = ITEMS.register("adamantite_knife",
+            compat(FARMERS_DELIGHT_ID, it -> FarmersDelightCompat.KNIFE_FACTORY_ADAMANTITE.apply(it), new Item.Properties()));
+    public static final RegistryObject<Item> ENDERITE_KNIFE = ITEMS.register("enderite_knife",
+            compat(FARMERS_DELIGHT_ID, it -> FarmersDelightCompat.KNIFE_FACTORY_ENDERITE.apply(it), new Item.Properties().fireResistant()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+    }
+
+    public static Supplier<? extends Item> compat(String modid, Function<Item.Properties, ? extends Item> supplier, Item.Properties properties) {
+        if (ModList.get().isLoaded(modid)) return () -> supplier.apply(properties);
+        return () -> new Item(properties);
     }
 }
