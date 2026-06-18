@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:noxrock"
+    },
+    "N": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "ENE",
+    "EEE"
+  ],
+  "result": {
+    "count": 8,
+    "item": "endelurgy:inert_noxrock"
+  },
+  "show_notification": true
+}

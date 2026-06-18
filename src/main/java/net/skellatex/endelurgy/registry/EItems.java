@@ -1,5 +1,6 @@
 package net.skellatex.endelurgy.registry;
 
+import net.minecraft.world.entity.vehicle.AbstractMinecart;
 import net.minecraft.world.item.*;
 import net.minecraftforge.fml.ModList;
 import net.skellatex.endelurgy.Endelurgy;
@@ -88,6 +89,10 @@ public class EItems {
 
     public static final RegistryObject<Item> ENDERITE_HORSE_ARMOR = ITEMS.register("enderite_horse_armor",
             () -> new EnderiteHorseArmorItem(new Item.Properties().fireResistant().stacksTo(1)));
+
+    // Misc
+    public static final RegistryObject<Item> DIRTY_BOMB_MINECART = ITEMS.register("dirty_bomb_minecart",
+            () -> new DirtyBombMinecartItem(AbstractMinecart.Type.TNT, EEntityTypes.DIRTY_BOMB_MINECART));
 
     // Compat
     public static final RegistryObject<Item> CRUSHED_RAW_ADAMANTITE = ITEMS.register("crushed_raw_adamantite",

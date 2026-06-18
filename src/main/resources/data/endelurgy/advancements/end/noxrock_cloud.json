@@ -1,0 +1,29 @@
+{
+  "parent": "endelurgy:end/obtain_end_ore",
+  "criteria": {
+    "in_noxrock_cloud": {
+      "conditions": {},
+      "trigger": "endelurgy:in_noxrock_cloud"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.endelurgy.noxrock_cloud.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:noxrock"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.endelurgy.noxrock_cloud.title"
+    }
+  },
+  "requirements": [
+    [
+      "in_noxrock_cloud"
+    ]
+  ]
+}

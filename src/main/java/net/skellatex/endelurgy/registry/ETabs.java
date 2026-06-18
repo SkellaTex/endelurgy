@@ -63,6 +63,19 @@ public class ETabs {
             putAfter(entries, EBlocks.NOXROCK_BRICKS.get(), EBlocks.NOXROCK_BRICK_STAIRS);
             putAfter(entries, EBlocks.NOXROCK_BRICK_STAIRS.get(), EBlocks.NOXROCK_BRICK_SLAB);
             putAfter(entries, EBlocks.NOXROCK_BRICK_SLAB.get(), EBlocks.NOXROCK_BRICK_WALL);
+            putAfter(entries, EBlocks.NOXROCK_BRICK_WALL.get(), EBlocks.INERT_NOXROCK);
+            putAfter(entries, EBlocks.INERT_NOXROCK.get(), EBlocks.INERT_NOXROCK_STAIRS);
+            putAfter(entries, EBlocks.INERT_NOXROCK_STAIRS.get(), EBlocks.INERT_NOXROCK_SLAB);
+            putAfter(entries, EBlocks.INERT_NOXROCK_SLAB.get(), EBlocks.INERT_NOXROCK_WALL);
+            putAfter(entries, EBlocks.INERT_NOXROCK_WALL.get(), EBlocks.POLISHED_INERT_NOXROCK);
+            putAfter(entries, EBlocks.POLISHED_INERT_NOXROCK.get(), EBlocks.POLISHED_INERT_NOXROCK_STAIRS);
+            putAfter(entries, EBlocks.POLISHED_INERT_NOXROCK_STAIRS.get(), EBlocks.POLISHED_INERT_NOXROCK_SLAB);
+            putAfter(entries, EBlocks.POLISHED_INERT_NOXROCK_SLAB.get(), EBlocks.POLISHED_INERT_NOXROCK_WALL);
+            putAfter(entries, EBlocks.POLISHED_INERT_NOXROCK_WALL.get(), EBlocks.CHISELED_INERT_NOXROCK);
+            putAfter(entries, EBlocks.CHISELED_INERT_NOXROCK.get(), EBlocks.INERT_NOXROCK_BRICKS);
+            putAfter(entries, EBlocks.INERT_NOXROCK_BRICKS.get(), EBlocks.INERT_NOXROCK_BRICK_STAIRS);
+            putAfter(entries, EBlocks.INERT_NOXROCK_BRICK_STAIRS.get(), EBlocks.INERT_NOXROCK_BRICK_SLAB);
+            putAfter(entries, EBlocks.INERT_NOXROCK_BRICK_SLAB.get(), EBlocks.INERT_NOXROCK_BRICK_WALL);
             putBefore(entries, Blocks.REDSTONE_BLOCK, EBlocks.ADAMANTITE_BLOCK);
             putBefore(entries, Blocks.NETHERITE_BLOCK, EBlocks.LUXITE_BLOCK);
             putAfter(entries, Blocks.NETHERITE_BLOCK, EBlocks.ENDERITE_BLOCK);
@@ -70,6 +83,8 @@ public class ETabs {
         }
 
         if (tab == CreativeModeTabs.NATURAL_BLOCKS) {
+            putAfter(entries, Blocks.END_STONE, EBlocks.VOIDSLATE);
+            putAfter(entries, EBlocks.VOIDSLATE.get(), EBlocks.NOXROCK);
             putAfter(entries, Blocks.ANCIENT_DEBRIS, EBlocks.END_LAPIS_ORE);
             putAfter(entries, EBlocks.END_LAPIS_ORE.get(), EBlocks.VOIDSLATE_LAPIS_ORE);
             putAfter(entries, EBlocks.VOIDSLATE_LAPIS_ORE.get(), EBlocks.END_ADAMANTITE_ORE);
@@ -102,6 +117,7 @@ public class ETabs {
             putAfter(entries, EItems.ENDERITE_SHOVEL.get(), EItems.ENDERITE_PICKAXE);
             putAfter(entries, EItems.ENDERITE_PICKAXE.get(), EItems.ENDERITE_AXE);
             putAfter(entries, EItems.ENDERITE_AXE.get(), EItems.ENDERITE_HOE);
+            putAfter(entries, Items.TNT_MINECART, EItems.DIRTY_BOMB_MINECART);
         }
 
         if (tab == CreativeModeTabs.COMBAT) {
@@ -120,6 +136,12 @@ public class ETabs {
             putAfter(entries, EItems.ENDERITE_LEGGINGS.get(), EItems.ENDERITE_BOOTS);
             putAfter(entries, Items.DIAMOND_HORSE_ARMOR, EItems.ADAMANTITE_HORSE_ARMOR);
             putAfter(entries, EItems.ADAMANTITE_HORSE_ARMOR.get(), EItems.ENDERITE_HORSE_ARMOR);
+            putBefore(entries, Items.END_CRYSTAL, EBlocks.DIRTY_BOMB);
+        }
+
+        if (tab == CreativeModeTabs.REDSTONE_BLOCKS) {
+            putBefore(entries, Blocks.REDSTONE_LAMP, EBlocks.DIRTY_BOMB);
+            putBefore(entries, Items.OAK_CHEST_BOAT, EItems.DIRTY_BOMB_MINECART);
         }
 
         if (ModList.get().isLoaded(CREATE_ID)) {

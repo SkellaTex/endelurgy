@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:polished_inert_noxrock_slab"
+    }
+  },
+  "pattern": [
+    "E",
+    "E"
+  ],
+  "result": {
+    "item": "endelurgy:chiseled_inert_noxrock"
+  },
+  "show_notification": true
+}

@@ -32,20 +32,20 @@ public class EEvents {
         DamageSource damageSource = event.getSource();
 
         if (damageSource.is(ETags.DamageTypes.ENDERITE_ARMOR_RESISTS)) {
-                float damageResistance = 0.0F;
-                for (EquipmentSlot slot : EquipmentSlot.values()) {
-                    if (slot.getType() == EquipmentSlot.Type.ARMOR) {
-                        ItemStack stack = target.getItemBySlot(slot);
-                        Collection<AttributeModifier> fireRes = stack.getAttributeModifiers(slot).get(EAttributes.DAMAGE_RESISTANCE.get());
-                        if (!fireRes.isEmpty()) {
-                            damageResistance += fireRes.stream().mapToDouble(AttributeModifier::getAmount).sum();
-                        }
+            float damageResistance = 0.0F;
+            for (EquipmentSlot slot : EquipmentSlot.values()) {
+                if (slot.getType() == EquipmentSlot.Type.ARMOR) {
+                    ItemStack stack = target.getItemBySlot(slot);
+                    Collection<AttributeModifier> dmgRes = stack.getAttributeModifiers(slot).get(EAttributes.DAMAGE_RESISTANCE.get());
+                    if (!dmgRes.isEmpty()) {
+                        damageResistance += dmgRes.stream().mapToDouble(AttributeModifier::getAmount).sum();
                     }
                 }
-                if (damageResistance > 0.0F) {
-                    event.setAmount(event.getAmount() - event.getAmount() * damageResistance);
-                }
+            }
+            if (damageResistance > 0.0F) {
+                event.setAmount(event.getAmount() - event.getAmount() * damageResistance);
             }
         }
-
     }
+
+}

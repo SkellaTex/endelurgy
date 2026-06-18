@@ -2,9 +2,8 @@ package net.skellatex.endelurgy;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
-import net.skellatex.endelurgy.registry.EBlocks;
+import net.skellatex.endelurgy.registry.*;
 import net.skellatex.endelurgy.client.NoxrockCloudParticleProvider;
-import net.skellatex.endelurgy.registry.EItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -14,11 +13,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.skellatex.endelurgy.registry.EAttributes;
 import net.skellatex.endelurgy.content.potion.EMobEffects;
 import net.skellatex.endelurgy.world.feature.EFeatures;
 import net.skellatex.endelurgy.world.loot.ELootModifiers;
-import net.skellatex.endelurgy.registry.EParticleTypes;
 import org.slf4j.Logger;
 
 @Mod(Endelurgy.MOD_ID)
@@ -38,6 +35,7 @@ public class Endelurgy {
         EMobEffects.POTIONS.register(modEventBus);
         EFeatures.FEATURES.register(modEventBus);
         EAttributes.ATTRIBUTES.register(modEventBus);
+        EEntityTypes.ENTITIES.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

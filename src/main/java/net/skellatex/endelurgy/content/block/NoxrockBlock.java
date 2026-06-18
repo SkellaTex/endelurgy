@@ -27,6 +27,7 @@ public class NoxrockBlock {
         return Stream.of(
                 new MobEffectInstance(MobEffects.POISON, 120, 1),
                 new MobEffectInstance(MobEffects.CONFUSION, 120),
+                new MobEffectInstance(EMobEffects.CORROSION.get(), 120, 1),
                 new MobEffectInstance(EMobEffects.CORROSION.get(), 600)
 
         );

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:inert_noxrock_bricks"
+    }
+  },
+  "pattern": [
+    "EEE"
+  ],
+  "result": {
+    "count": 6,
+    "item": "endelurgy:inert_noxrock_brick_slab"
+  },
+  "show_notification": true
+}

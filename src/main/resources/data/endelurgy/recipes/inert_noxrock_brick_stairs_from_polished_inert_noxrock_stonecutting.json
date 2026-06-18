@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "endelurgy:polished_inert_noxrock"
+  },
+  "result": "endelurgy:inert_noxrock_brick_stairs"
+}

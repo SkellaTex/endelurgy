@@ -1,5 +1,6 @@
 package net.skellatex.endelurgy.registry;
 
+import com.google.common.collect.ImmutableBiMap;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 import net.skellatex.endelurgy.Endelurgy;
@@ -10,6 +11,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.skellatex.endelurgy.content.block.ConcentratedNoxrockBlock;
+import net.skellatex.endelurgy.content.block.DirtyBombBlock;
 import net.skellatex.endelurgy.content.block.InfestedEndritusBlock;
 
 import java.util.function.Supplier;
@@ -70,6 +73,59 @@ public class EBlocks {
 
     public static final RegistryObject<Block> NOXROCK_BRICK_WALL = registerBlock("noxrock_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK = registerBlock("inert_noxrock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_STAIRS = registerBlock("inert_noxrock_stairs",
+            () -> new StairBlock(() -> EBlocks.NOXROCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_SLAB = registerBlock("inert_noxrock_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_WALL = registerBlock("inert_noxrock_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> POLISHED_INERT_NOXROCK = registerBlock("polished_inert_noxrock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> POLISHED_INERT_NOXROCK_STAIRS = registerBlock("polished_inert_noxrock_stairs",
+            () -> new StairBlock(() -> EBlocks.POLISHED_NOXROCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> POLISHED_INERT_NOXROCK_SLAB = registerBlock("polished_inert_noxrock_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> POLISHED_INERT_NOXROCK_WALL = registerBlock("polished_inert_noxrock_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHISELED_INERT_NOXROCK = registerBlock("chiseled_inert_noxrock",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_BRICKS = registerBlock("inert_noxrock_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_BRICK_STAIRS = registerBlock("inert_noxrock_brick_stairs",
+            () -> new StairBlock(() -> EBlocks.NOXROCK_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_BRICK_SLAB = registerBlock("inert_noxrock_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> INERT_NOXROCK_BRICK_WALL = registerBlock("inert_noxrock_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF).strength(2.5f, 0.5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CONCENTRATED_NOXROCK = registerBlock("concentrated_noxrock",
+            () -> new ConcentratedNoxrockBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(4f, 1f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> VOIDSLATE = registerBlock("voidslate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
@@ -181,6 +237,9 @@ public class EBlocks {
 
     public static final RegistryObject<Block> ENDERITE_BLOCK = registerItemPropertiesBlock("enderite_block", () ->
             new Block(BlockBehaviour.Properties.of().strength(50f, 1200f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)), new Item.Properties().fireResistant());
+
+    public static final RegistryObject<Block> DIRTY_BOMB = registerBlock("dirty_bomb",
+            () -> new DirtyBombBlock(BlockBehaviour.Properties.copy(Blocks.TNT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endelurgy:block/noxrock_brick_slab"
+    },
+    "type=double": {
+      "model": "endelurgy:block/noxrock_bricks"
+    },
+    "type=top": {
+      "model": "endelurgy:block/noxrock_brick_slab_top"
+    }
+  }
+}

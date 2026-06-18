@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="*"
+loaderVersion="[46,)"
 license="All Rights Reserved"
 
 [[mods]]
 modId="endelurgy"
-version="0.2.2"
+version="0.3.0"
 displayName="Endelurgy"
 logoFile="endelurgy.png"
 authors="SkellaTex"
@@ -13,7 +13,7 @@ description='''Adds new ores, resources, and improves upon the End'''
 [[dependencies.endelurgy]]
 modId="forge"
 mandatory=true
-versionRange="*"
+versionRange="[47.4.0,)"
 ordering="NONE"
 side="BOTH"
 

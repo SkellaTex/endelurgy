@@ -1,0 +1,37 @@
+{
+  "parent": "endelurgy:end/noxrock_cloud",
+  "criteria": {
+    "dirty_bomb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endelurgy:dirty_bomb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.end.obtain_dirty_bomb.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "endelurgy:dirty_bomb"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.end.obtain_dirty_bomb.title"
+    }
+  },
+  "requirements": [
+    [
+      "dirty_bomb"
+    ]
+  ]
+}

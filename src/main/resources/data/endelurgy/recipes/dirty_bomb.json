@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "endelurgy:noxrock"
+    },
+    "N": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "ENE",
+    "EEE"
+  ],
+  "result": {
+    "item": "endelurgy:dirty_bomb"
+  },
+  "show_notification": true
+}

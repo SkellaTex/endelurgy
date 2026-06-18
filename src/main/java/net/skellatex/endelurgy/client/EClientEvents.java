@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import net.skellatex.endelurgy.Endelurgy;
+import net.skellatex.endelurgy.registry.EEntityTypes;
 
 @Mod.EventBusSubscriber(modid = Endelurgy.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class EClientEvents {
@@ -32,6 +33,11 @@ public class EClientEvents {
         if (renderer != null) {
             renderer.addLayer(new WingedEnderiteChestplateLayer(renderer, event.getEntityModels()));
         }
+    }
+    @SubscribeEvent
+    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(EEntityTypes.PRIMED_DIRTY_BOMB.get(), DirtyBombRender::new);
+        event.registerEntityRenderer(EEntityTypes.DIRTY_BOMB_MINECART.get(), DirtyBombMinecartRender::new);
     }
 
 }

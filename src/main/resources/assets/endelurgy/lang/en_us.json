@@ -73,6 +73,20 @@
   "block.endelurgy.noxrock_brick_slab": "Noxrock Brick Slab",
   "block.endelurgy.noxrock_brick_wall": "Noxrock Brick Wall",
 
+  "block.endelurgy.inert_noxrock": "Inert Noxrock",
+  "block.endelurgy.inert_noxrock_stairs": "Inert Noxrock Stairs",
+  "block.endelurgy.inert_noxrock_slab": "Inert Noxrock Slab",
+  "block.endelurgy.inert_noxrock_wall": "Inert Noxrock Wall",
+  "block.endelurgy.polished_inert_noxrock": "Polished Inert Noxrock",
+  "block.endelurgy.polished_inert_noxrock_stairs": "Polished Inert Noxrock Stairs",
+  "block.endelurgy.polished_inert_noxrock_slab": "Polished Inert Noxrock Slab",
+  "block.endelurgy.polished_inert_noxrock_wall": "Polished Inert Noxrock Wall",
+  "block.endelurgy.chiseled_inert_noxrock": "Chiseled Inert Noxrock",
+  "block.endelurgy.inert_noxrock_bricks": "Inert Noxrock Bricks",
+  "block.endelurgy.inert_noxrock_brick_stairs": "Inert Noxrock Brick Stairs",
+  "block.endelurgy.inert_noxrock_brick_slab": "Inert Noxrock Brick Slab",
+  "block.endelurgy.inert_noxrock_brick_wall": "Inert Noxrock Brick Wall",
+
   "block.endelurgy.voidslate": "Voidslate",
   "block.endelurgy.voidslate_stairs": "Voidslate Stairs",
   "block.endelurgy.voidslate_slab": "Voidslate Slab",
@@ -105,6 +119,10 @@
   "advancements.end.eat_enderite_apple.description": "[title card]",
   "advancements.end.dragon_egg_omelet.title": "The Last Generation",
   "advancements.end.dragon_egg_omelet.description": "Found a use for the Dragon Egg",
+  "advancements.endelurgy.noxrock_cloud.title": "Warning: Corrosive Substance",
+  "advancements.endelurgy.noxrock_cloud.description": "Take a whiff of a Noxrock cloud",
+  "advancements.end.obtain_dirty_bomb.title": "Geneva Contravention",
+  "advancements.end.obtain_dirty_bomb.description": "Craft a Dirty Bomb",
 
   "effect.endelurgy.vitality": "Vitality",
   "item.minecraft.potion.effect.vitality": "Potion of Vitality",
@@ -178,6 +196,12 @@
   "trim_material.endelurgy.adamantite": "Adamantite Material",
   "trim_material.endelurgy.luxite": "Luxite Material",
   "trim_material.endelurgy.enderite": "Enderite Material",
+
+  "block.endelurgy.dirty_bomb": "Dirty Bomb",
+  "entity.endelurgy.primed_dirty_bomb": "Primed Dirty Bomb",
+
+  "item.endelurgy.dirty_bomb_minecart": "Minecart with Dirty Bomb",
+  "entity.endelurgy.dirty_bomb_minecart": "Minecart with Dirty Bomb",
 
   "attribute.endelurgy.name.generic.damage_protection": "Damage Resistance"
 }

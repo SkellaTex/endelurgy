@@ -1,5 +1,5 @@
 {
-  "parent": "endelurgy:end/obtain_end_ore",
+  "parent": "endelurgy:end/noxrock_cloud",
   "criteria": {
     "luxite": {
       "conditions": {

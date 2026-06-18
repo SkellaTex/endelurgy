@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": [
+    "endelurgy:ore_lapis",
+    "endelurgy:ore_adamantite",
+    "endelurgy:ore_luxite"
+  ],
+  "step": "underground_ores"
+}
