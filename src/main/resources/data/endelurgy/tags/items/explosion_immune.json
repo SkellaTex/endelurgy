@@ -1,0 +1,26 @@
+{
+  "__comment": "items that won't be destroyed by explosions",
+  "values": [
+    "endelurgy:luxite",
+    "endelurgy:rough_luxite",
+    "endelurgy:luxite_shard",
+    "endelurgy:rough_luxite_shard",
+    "endelurgy:luxite_block",
+    "endelurgy:rough_luxite_block",
+    "endelurgy:enderite_ingot",
+    "endelurgy:enderite_block",
+    "endelurgy:enderite_sword",
+    "endelurgy:enderite_axe",
+    "endelurgy:enderite_pickaxe",
+    "endelurgy:enderite_shovel",
+    "endelurgy:enderite_hoe",
+    "endelurgy:enderite_knife",
+    "endelurgy:enderite_helmet",
+    "endelurgy:enderite_chestplate",
+    "endelurgy:winged_enderite_chestplate",
+    "endelurgy:enderite_leggings",
+    "endelurgy:enderite_boots",
+    "endelurgy:enderite_horse_armor",
+    "endelurgy:enderite_apple"
+  ]
+}

@@ -14,10 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(BlockBehaviour.class)
 public class BlockBehaviourMixin {
 
-    @Inject(
-            method = "spawnAfterBreak",
-            at = @At("HEAD")
-    )
+    @Inject(at = @At("HEAD"), method = "spawnAfterBreak")
     private void spawnNoxrockCloud(BlockState state, ServerLevel level, BlockPos pos, ItemStack stack, boolean xp, CallbackInfo ci) {
         NoxrockBlock.trySpawnNoxrockCloud(state, level, pos, stack);
     }

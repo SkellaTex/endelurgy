@@ -1,4 +1,5 @@
 {
+  "__comment": "all damage sources enderite armor protects against",
   "values": [
     "#minecraft:is_fire",
     "#minecraft:is_freezing",

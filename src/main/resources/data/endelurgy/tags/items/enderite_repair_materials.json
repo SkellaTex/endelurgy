@@ -1,4 +1,5 @@
 {
+  "__comment": "all items that can be used to repair enderite equipment",
   "values": [
     "endelurgy:luxite",
     "endelurgy:enderite_ingot"

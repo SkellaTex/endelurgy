@@ -22,6 +22,7 @@ public class ETags {
 
     public static class Items {
         public static final TagKey<Item> ENDERITE_REPAIR_MATERIALS = registerItemTag("enderite_repair_materials");
+        public static final TagKey<Item> EXPLOSION_IMMUNE = registerItemTag("explosion_immune");
     }
 
         private static TagKey<Item> registerItemTag(String name) {

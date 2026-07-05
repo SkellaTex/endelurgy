@@ -1,4 +1,5 @@
 {
+  "__comment": "all blocks that release a toxic cloud when broken",
   "values": [
     "endelurgy:noxrock",
     "endelurgy:noxrock_stairs",

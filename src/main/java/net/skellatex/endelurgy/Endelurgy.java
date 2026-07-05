@@ -1,7 +1,9 @@
 package net.skellatex.endelurgy;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
+import net.skellatex.endelurgy.content.misc.CustomTNTDispenseBehavior;
 import net.skellatex.endelurgy.registry.*;
 import net.skellatex.endelurgy.client.NoxrockCloudParticleProvider;
 import net.minecraftforge.api.distmarker.Dist;
@@ -44,6 +46,10 @@ public class Endelurgy {
         event.enqueueWork(() -> {
             EMobEffects.setup();
         });
+        DispenserBlock.registerBehavior(
+                EBlocks.DIRTY_BOMB.get(), // Register against the ITEM, not the Block
+                new CustomTNTDispenseBehavior()
+        );
     }
 
 
