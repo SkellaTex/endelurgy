@@ -18,10 +18,7 @@ public class EnderiteHelmetItem extends ArmorItem {
     public EnderiteHelmetItem(ArmorMaterial material, Type slot, Properties properties) {
         super(material, slot, properties);
     }
-    @Override
-    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity) {
-        return true;
-    }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
@@ -29,5 +26,10 @@ public class EnderiteHelmetItem extends ArmorItem {
         UUID uuid = ArmorItem.ARMOR_MODIFIER_UUID_PER_TYPE.get(this.type);
         builder.put(EAttributes.DAMAGE_RESISTANCE.get(), new AttributeModifier(uuid, "Damage resistance", 0.1D, AttributeModifier.Operation.MULTIPLY_BASE));
         return slot == this.getEquipmentSlot() ? builder.build() : super.getAttributeModifiers(slot, stack);
+    }
+
+    @Override
+    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity) {
+        return true;
     }
 }

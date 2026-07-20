@@ -58,6 +58,10 @@
   "block.endelurgy.raw_purpur_slab": "Raw Purpur Slab",
   "block.endelurgy.raw_purpur_wall": "Raw Purpur Wall",
   "block.endelurgy.purpur_wall": "Purpur Wall",
+  "block.endelurgy.raw_adamantite_bricks": "Raw Adamantite Bricks",
+  "block.endelurgy.raw_adamantite_brick_stairs": "Raw Adamantite Brick Stairs",
+  "block.endelurgy.raw_adamantite_brick_slab": "Raw Adamantite Brick Slab",
+  "block.endelurgy.raw_adamantite_brick_wall": "Raw Adamantite Brick Wall",
 
   "block.endelurgy.noxrock": "Noxrock",
   "block.endelurgy.noxrock_stairs": "Noxrock Stairs",
@@ -119,8 +123,8 @@
   "advancements.end.eat_enderite_apple.description": "[title card]",
   "advancements.end.dragon_egg_omelet.title": "The Last Generation",
   "advancements.end.dragon_egg_omelet.description": "Found a use for the Dragon Egg",
-  "advancements.endelurgy.noxrock_cloud.title": "Warning: Corrosive Substance",
-  "advancements.endelurgy.noxrock_cloud.description": "Take a whiff of a Noxrock cloud",
+  "advancements.endelurgy.noxrock_cloud.title": "Cloud of Corrosion",
+  "advancements.endelurgy.noxrock_cloud.description": "Mind your equipment!",
   "advancements.end.obtain_dirty_bomb.title": "Geneva Contravention",
   "advancements.end.obtain_dirty_bomb.description": "Craft a Dirty Bomb",
 

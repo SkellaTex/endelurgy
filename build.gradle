@@ -64,7 +64,7 @@ dependencies {
     implementation fg.deobf("curse.maven:farmers-delight-398521:8007609")
     implementation fg.deobf("curse.maven:jei-238222:6600311")
     implementation fg.deobf("curse.maven:appleskin-248787:4770828")
-    implementation fg.deobf("curse.maven:nethelurgy-1285898:8356786")
+    implementation fg.deobf("curse.maven:nethelurgy-1285898:8407666")
 }
 
 jar {

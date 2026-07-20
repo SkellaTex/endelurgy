@@ -5,6 +5,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.event.entity.EntityTeleportEvent;
+import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,6 +25,31 @@ public class EEvents {
     public static void onBlockBreak(final BlockEvent.BreakEvent event) {
         if (event.getState().is(ETags.Blocks.CREATES_NOXROCK_CLOUD)) {
             NoxrockCloud.create(event.getPos(), event.getPlayer().level(), 5F, 0.02F, 280);
+        }
+    }
+
+    @SubscribeEvent
+    public static void onEntityTeleport(EntityTeleportEvent event) {
+        if (event.getEntity() instanceof LivingEntity livingEntity) {
+            if (livingEntity.getPersistentData().getInt("NoTeleportTimer") > 0) {
+                event.setCanceled(true);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onLivingTick(LivingEvent.LivingTickEvent event) {
+        LivingEntity target = event.getEntity();
+        var data = target.getPersistentData();
+
+        if (data.contains("NoTeleportTimer", 3)) { // 3 = TagType.INT
+            int timer = data.getInt("NoTeleportTimer");
+
+            if (timer > 0) {
+                data.putInt("NoTeleportTimer", timer - 1);
+            } else {
+                data.remove("NoTeleportTimer");
+            }
         }
     }
 
@@ -46,6 +73,17 @@ public class EEvents {
                 event.setAmount(event.getAmount() - event.getAmount() * damageResistance);
             }
         }
-    }
+        LivingEntity attacker = null;
+        if (event.getSource().getDirectEntity() instanceof LivingEntity) {
+            attacker = (LivingEntity) event.getSource().getDirectEntity();
+        }
 
+        if (attacker != null) {
+            ItemStack weapon = attacker.getMainHandItem();
+
+            if (weapon.is(ETags.Items.ENDERITE_TOOLS)) {
+                target.getPersistentData().putInt("NoTeleportTimer", 200);
+            }
+        }
+    }
 }

@@ -1,0 +1,11 @@
+{
+  "__comment": "items that prevent endermen from teleporting",
+  "values": [
+    "endelurgy:enderite_sword",
+    "endelurgy:enderite_axe",
+    "endelurgy:enderite_pickaxe",
+    "endelurgy:enderite_shovel",
+    "endelurgy:enderite_hoe",
+    "endelurgy:enderite_knife"
+  ]
+}

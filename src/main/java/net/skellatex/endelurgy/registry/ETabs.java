@@ -77,6 +77,12 @@ public class ETabs {
             putAfter(entries, EBlocks.INERT_NOXROCK_BRICK_STAIRS.get(), EBlocks.INERT_NOXROCK_BRICK_SLAB);
             putAfter(entries, EBlocks.INERT_NOXROCK_BRICK_SLAB.get(), EBlocks.INERT_NOXROCK_BRICK_WALL);
             putBefore(entries, Blocks.REDSTONE_BLOCK, EBlocks.ADAMANTITE_BLOCK);
+            if (ModList.get().isLoaded(QUARK_ID)) {
+                putAfter(entries, EBlocks.ADAMANTITE_BLOCK.get(), EBlocks.RAW_ADAMANTITE_BRICKS);
+                putAfter(entries, EBlocks.RAW_ADAMANTITE_BRICKS.get(), EBlocks.RAW_ADAMANTITE_BRICK_STAIRS);
+                putAfter(entries, EBlocks.RAW_ADAMANTITE_BRICK_STAIRS.get(), EBlocks.RAW_ADAMANTITE_BRICK_SLAB);
+                putAfter(entries, EBlocks.RAW_ADAMANTITE_BRICK_SLAB.get(), EBlocks.RAW_ADAMANTITE_BRICK_WALL);
+            }
             putBefore(entries, Blocks.NETHERITE_BLOCK, EBlocks.LUXITE_BLOCK);
             putAfter(entries, Blocks.NETHERITE_BLOCK, EBlocks.ENDERITE_BLOCK);
             putAfter(entries, EBlocks.LUXITE_BLOCK.get(), EBlocks.ROUGH_LUXITE_BLOCK);

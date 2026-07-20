@@ -5,7 +5,7 @@
       "item": "endelurgy:noxrock"
     },
     "N": {
-      "item": "minecraft:milk_bucket"
+      "tag": "forge:milk"
     }
   },
   "pattern": [

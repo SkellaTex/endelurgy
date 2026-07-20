@@ -17,6 +17,7 @@ public class EnderiteArmorItem extends ArmorItem {
     public EnderiteArmorItem(ArmorMaterial material, ArmorItem.Type slot, Properties properties) {
         super(material, slot, properties);
     }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();

@@ -3,6 +3,10 @@
     "endelurgy:end_adamantite_ore",
     "endelurgy:voidslate_adamantite_ore",
     "endelurgy:raw_adamantite_block",
-    "endelurgy:adamantite_block"
+    "endelurgy:adamantite_block",
+    "endelurgy:raw_adamantite_bricks",
+    "endelurgy:raw_adamantite_brick_stairs",
+    "endelurgy:raw_adamantite_brick_slab",
+    "endelurgy:raw_adamantite_brick_wall"
   ]
 }

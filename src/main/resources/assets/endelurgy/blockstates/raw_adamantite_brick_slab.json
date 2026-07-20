@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "endelurgy:block/raw_adamantite_brick_slab"
+    },
+    "type=double": {
+      "model": "endelurgy:block/raw_adamantite_bricks"
+    },
+    "type=top": {
+      "model": "endelurgy:block/raw_adamantite_brick_slab_top"
+    }
+  }
+}

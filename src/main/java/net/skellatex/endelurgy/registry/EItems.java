@@ -81,7 +81,7 @@ public class EItems {
     public static final RegistryObject<Item> ENDERITE_CHESTPLATE = ITEMS.register("enderite_chestplate",
             () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_LEGGINGS = ITEMS.register("enderite_leggings",
-            () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
+            () -> new EnderiteLeggingsItem(EArmorMaterials.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> ENDERITE_BOOTS = ITEMS.register("enderite_boots",
             () -> new EnderiteArmorItem(EArmorMaterials.ENDERITE, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> WINGED_ENDERITE_CHESTPLATE = ITEMS.register("winged_enderite_chestplate",

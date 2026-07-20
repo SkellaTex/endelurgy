@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "endelurgy:raw_adamantite_bricks"
+    }
+  },
+  "result": {
+    "item": "endelurgy:raw_adamantite_brick_wall",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+} 

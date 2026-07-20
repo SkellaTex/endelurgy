@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{
+      "item": "endelurgy:raw_adamantite_bricks"
+    }
+  ],
+  "result": {
+    "item": "endelurgy:raw_adamantite",
+    "count": 9
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+} 

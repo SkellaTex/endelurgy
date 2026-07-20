@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "endelurgy:raw_adamantite_bricks"
+  },
+  "result": "endelurgy:raw_adamantite_brick_slab",
+  "count": 2,
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+}

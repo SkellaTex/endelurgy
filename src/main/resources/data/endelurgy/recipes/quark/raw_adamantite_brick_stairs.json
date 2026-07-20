@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E  ",
+    "EE ",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "endelurgy:raw_adamantite_bricks"
+    }
+  },
+  "result": {
+    "item": "endelurgy:raw_adamantite_brick_stairs",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "modid": "quark",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "type": "quark:flag",
+      "flag": "raw_metal_bricks"
+    }
+  ]
+} 
