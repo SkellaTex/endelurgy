@@ -207,5 +207,8 @@
   "item.endelurgy.dirty_bomb_minecart": "Minecart with Dirty Bomb",
   "entity.endelurgy.dirty_bomb_minecart": "Minecart with Dirty Bomb",
 
-  "attribute.endelurgy.name.generic.damage_protection": "Damage Resistance"
+  "attribute.endelurgy.name.generic.damage_protection": "Damage Resistance",
+
+  "enchantment.endelurgy.telekinesis": "Telekinesis",
+  "enchantment.endelurgy.telekinesis.desc": "Killed entities will have their loot teleported to the user's inventory."
 }

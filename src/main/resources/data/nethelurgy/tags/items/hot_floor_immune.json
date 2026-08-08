@@ -1,0 +1,6 @@
+{
+  "__comment": "boots that prevent damage from magma blocks",
+  "values": [
+    "endelurgy:enderite_boots"
+  ]
+}

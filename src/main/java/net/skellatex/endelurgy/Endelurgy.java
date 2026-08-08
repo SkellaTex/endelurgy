@@ -1,8 +1,13 @@
 package net.skellatex.endelurgy;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DispenserBlock;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
+import net.skellatex.endelurgy.content.enchantment.EEnchantments;
 import net.skellatex.endelurgy.content.misc.CustomTNTDispenseBehavior;
 import net.skellatex.endelurgy.registry.*;
 import net.skellatex.endelurgy.client.NoxrockCloudParticleProvider;
@@ -38,6 +43,7 @@ public class Endelurgy {
         EFeatures.FEATURES.register(modEventBus);
         EAttributes.ATTRIBUTES.register(modEventBus);
         EEntityTypes.ENTITIES.register(modEventBus);
+        //EEnchantments.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -45,6 +51,7 @@ public class Endelurgy {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             EMobEffects.setup();
+            EFlammables.register();
         });
         DispenserBlock.registerBehavior(
                 EBlocks.DIRTY_BOMB.get(), // Register against the ITEM, not the Block

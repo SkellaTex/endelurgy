@@ -23,16 +23,16 @@ public class EBlocks {
     // Ores
     public static final RegistryObject<Block> END_LAPIS_ORE = registerBlock("end_lapis_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.STONE)
-                    .strength(4.5f, 3f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+                    .strength(4.5f, 4.5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> END_ADAMANTITE_ORE = registerBlock("end_adamantite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.STONE)
-                    .strength(4.5f, 4f).requiresCorrectToolForDrops()));
+                    .strength(4.5f, 4.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> VOIDSLATE_LAPIS_ORE = registerBlock("voidslate_lapis_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.DEEPSLATE)
-                    .strength(5f, 3f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+                    .strength(5.5f, 6f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> VOIDSLATE_ADAMANTITE_ORE = registerBlock("voidslate_adamantite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.DEEPSLATE)
-                    .strength(5f, 3f).requiresCorrectToolForDrops()));
+                    .strength(5.5f, 6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> NOXROCK_LUXITE_ORE = registerBlock("noxrock_luxite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.TUFF)
                     .strength(3f, 3f).requiresCorrectToolForDrops(), UniformInt.of(4, 8)));

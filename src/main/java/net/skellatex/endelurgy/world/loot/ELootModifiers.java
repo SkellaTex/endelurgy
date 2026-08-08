@@ -1,22 +1,26 @@
 package net.skellatex.endelurgy.world.loot;
 
 import com.mojang.serialization.Codec;
-import net.skellatex.endelurgy.Endelurgy;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.skellatex.endelurgy.Endelurgy;
 
 public class ELootModifiers {
-    public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS =
-            DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, Endelurgy.MOD_ID);
 
-    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_ITEM =
-            LOOT_MODIFIER_SERIALIZERS.register("add_item", AddItemModifier.CODEC);
+    private static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLM = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, Endelurgy.MOD_ID);
 
+    static {
+        GLM.register("add_item", AddItemModifier.CODEC);
+    }
+    static {
+        GLM.register("add_loot_table", AddLootTableModifier.CODEC);
+    }
 
-    public static void register(IEventBus eventBus) {
-        LOOT_MODIFIER_SERIALIZERS.register(eventBus);
+    private ELootModifiers() {}
+
+    public static void register(IEventBus bus) {
+        GLM.register(bus);
     }
 }
