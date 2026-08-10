@@ -1,31 +1,22 @@
 package net.skellatex.endelurgy.world.event;
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
-import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.skellatex.endelurgy.Endelurgy;
-import net.skellatex.endelurgy.content.enchantment.EEnchantments;
 import net.skellatex.endelurgy.registry.EAttributes;
 import net.skellatex.endelurgy.registry.ETags;
 import net.skellatex.endelurgy.content.misc.NoxrockCloud;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 @Mod.EventBusSubscriber(modid = Endelurgy.MOD_ID)
 public class EEvents {
@@ -94,48 +85,5 @@ public class EEvents {
                 target.getPersistentData().putInt("NoTeleportTimer", 160);
             }
         }
-    }
-
-    @SubscribeEvent
-    public static void onLivingDrops(LivingDropsEvent event) {
-        Entity attacker = event.getSource().getDirectEntity();
-
-        if (attacker instanceof Player player) {
-            if (EnchantmentHelper.getItemEnchantmentLevel(EEnchantments.TELEKINESIS.get(), player.getMainHandItem()) > 0) {
-                List<ItemStack> stacks = getStacksFromEntityItems(event.getDrops());
-
-                for (ItemEntity itemEntity : event.getDrops()) {
-                    if (player.addItem(itemEntity.getItem())) {
-                        stacks.remove(itemEntity.getItem());
-                    }
-                }
-
-            }
-        }
-        else if (attacker instanceof AbstractArrow arrow) {
-            Entity shooter = arrow.getOwner();
-
-            if (shooter instanceof Player player) {
-                ItemStack heldItem = player.getMainHandItem();
-
-                if (EnchantmentHelper.getItemEnchantmentLevel(EEnchantments.TELEKINESIS.get(), heldItem) > 0) {
-                    List<ItemStack> stacks = getStacksFromEntityItems(event.getDrops());
-
-                    for (ItemEntity itemEntity : event.getDrops()) {
-                        if (player.addItem(itemEntity.getItem())) {
-                            stacks.remove(itemEntity.getItem());
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    public static List<ItemStack> getStacksFromEntityItems(Collection<ItemEntity> l) {
-        List<ItemStack> stacks = new ArrayList<>();
-        for (ItemEntity item : l) {
-            stacks.add(item.getItem());
-        }
-        return stacks;
     }
 }
